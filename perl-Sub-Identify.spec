@@ -1,7 +1,7 @@
 %define module	Sub-Identify
 %define name	perl-%{module}
 %define version	0.02
-%define	release	1mdk
+%define	release	%mkrel 3
 
 Name:		%{name}
 Version:	%{version}
@@ -25,6 +25,8 @@ this, it uses perl's introspection mechanism, provided by the B module.
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
 %make
+
+%check
 make test
 
 %install
