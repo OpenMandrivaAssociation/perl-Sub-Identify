@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	%mkrel 5
+Release:	%mkrel 6
 
 Summary:	Retrieve names of code references
 License:	GPL+ or Artistic
