@@ -1,10 +1,10 @@
 %define modname	Sub-Identify
-%define modver 0.08
+%define modver 0.10
 
 Summary:	Retrieve names of code references
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	4
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
@@ -19,7 +19,7 @@ this, it uses perl's introspection mechanism, provided by the B module.
 %setup -qn %{modname}-%{modver}
 
 %build
-%__perl Makefile.PL INSTALLDIRS=vendor
+perl Makefile.PL INSTALLDIRS=vendor
 %make
 
 %check
