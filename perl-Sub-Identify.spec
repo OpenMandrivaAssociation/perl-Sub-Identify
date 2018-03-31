@@ -1,10 +1,10 @@
 %define modname	Sub-Identify
-%define modver 0.08
+%define modver 0.14
 
 Summary:	Retrieve names of code references
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	5
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
