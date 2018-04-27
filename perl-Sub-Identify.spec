@@ -10,6 +10,7 @@ Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
 Source0:	http://www.cpan.org/modules/by-module/Sub/%{modname}-%{modver}.tar.gz
 BuildRequires:	perl-devel
+BuildRequires:	perl(Test::More)
 
 %description
 Sub::Identify allows you to retrieve the real name of code references. For
