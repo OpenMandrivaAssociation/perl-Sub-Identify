@@ -1,5 +1,9 @@
 %define modname	Sub-Identify
 %define modver 0.14
+%ifarch %{x86_64}
+# FIXME bug
+%global _debugsource_template %{nil}
+%endif
 
 Summary:	Retrieve names of code references
 Name:		perl-%{modname}
