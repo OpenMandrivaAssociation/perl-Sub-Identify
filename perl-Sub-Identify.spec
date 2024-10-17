@@ -11,7 +11,7 @@ Version:	%perl_convert_version %{modver}
 Release:	13
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		http://metacpan.org/pod/Sub::Identify
+Url:		https://metacpan.org/pod/Sub::Identify
 Source0:	http://www.cpan.org/modules/by-module/Sub/%{modname}-%{modver}.tar.gz
 BuildRequires:	perl-devel
 BuildRequires:	perl(Test::More)
