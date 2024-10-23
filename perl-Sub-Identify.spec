@@ -8,7 +8,7 @@
 Summary:	Retrieve names of code references
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	13
+Release:	14
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/pod/Sub::Identify
