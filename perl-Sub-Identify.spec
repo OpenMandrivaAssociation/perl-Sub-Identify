@@ -1,18 +1,13 @@
 %define modname	Sub-Identify
-%define modver 0.14
-%ifarch %{x86_64}
-# FIXME bug
-%global _debugsource_template %{nil}
-%endif
 
 Summary:	Retrieve names of code references
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
-Release:	14
+Version:	0.14
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/pod/Sub::Identify
-Source0:	http://www.cpan.org/modules/by-module/Sub/%{modname}-%{modver}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Sub/%{modname}-%{version}.tar.gz
 BuildRequires:	perl-devel
 BuildRequires:	perl(Test::More)
 
@@ -21,7 +16,7 @@ Sub::Identify allows you to retrieve the real name of code references. For
 this, it uses perl's introspection mechanism, provided by the B module.
 
 %prep
-%setup -qn %{modname}-%{modver}
+%autosetup -p1 -n %{modname}-%{version}
 
 %build
 %__perl Makefile.PL INSTALLDIRS=vendor
