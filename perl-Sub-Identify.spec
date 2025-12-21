@@ -8,6 +8,7 @@ License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/pod/Sub::Identify
 Source0:	http://www.cpan.org/modules/by-module/Sub/%{modname}-%{version}.tar.gz
+BuildRequires:	make
 BuildRequires:	perl-devel
 BuildRequires:	perl(Test::More)
 
